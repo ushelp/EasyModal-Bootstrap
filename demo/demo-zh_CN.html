@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Bootstrap EasyModal Demo - zh_CN</title>
+
+		<!-- Bootstrap start -->
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<script src="jquery/jquery-3.1.0.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<!-- Bootstrap end -->
+
+		<!-- Bootstrap EasyModal  -->
+		<script src="bootstrap-easymodal/easy.bootstrap.easymodel-1.2.0.js"></script>
+		<!-- put your locale files after easy.bootstrap.easymodel.js -->
+		<script src="bootstrap-easymodal/lang/easy.bootstrap.easymodel-lang-zh_CN.js"></script>
+		
+		
+		<script>
+			$(function() {
+				
+				$("#alertBtn").on("click", function() {
+					// EasyModal.alert( msg, [callback, title,  btnTextArray, params] )	
+					EasyModal.alert('Account invalidate!');
+				})
+				$("#confirmBtn").on("click", function() {
+					// EasyModal.confirm( msg, [callback, title,  btnTextArray, params] )	
+					EasyModal.confirm('Sure you want to delete it!', function(res) {
+						EasyModal.alert('You choice :' + res);
+					});
+				})
+				$("#promptBtn").on("click", function() {
+					// EasyModal.prompt( msg, [defaultValue, callback, title, btnTextArray, params] )	
+					EasyModal.prompt('Input your age: ', 18, function(res) {
+						EasyModal.alert('Your age is:' + res);
+					});
+				})
+				$("#modalBtn").on("click", function() {
+					// EasyModal.modal(title , content , modalFooter, [params])
+					EasyModal.modal('ModalTitle', 'This is a demo!', 'Add button');
+				})
+				
+				$("#alertBtn2").on("click", function() {
+					// EasyModal.alert( msg, [callback, title,  btnTextArray, params] )	
+					EasyModal.alert(
+						'Account invalidate!', 
+						null, 
+						"User Title" ,
+						['User OK Button'],
+						{
+							size: 'modal-sm',
+							fade: false,
+							backdrop: 'static',
+							keyboard: false
+						}
+					);
+				})
+				$("#confirmBtn2").on("click", function() {
+					// EasyModal.confirm( msg, [callback, title,  btnTextArray, params] )	
+					EasyModal.confirm(
+						'Sure you want to delete it!', 
+						function(res){
+							EasyModal.alert('You choice :' + res);
+						}, 
+						"User Title" ,
+						['User Close Button', 'User OK Button'],
+						{
+							size: 'modal-lg',
+							backdrop: 'static'
+						}
+					);
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+
+			<div class="container">
+
+			<h1>Bootstrap EasyModal Demo - zh_CN </h1>
+			<h2><a href="index.html">index</a></h2>
+			
+			<div id="row">
+				<button id="alertBtn" type="button" class="btn btn-warning">EasyModal.alert()</button>
+				<div>
+<pre>
+// EasyModal.alert( msg, [callback, title,  btnTextArray, params] )	
+EasyModal.alert(
+	'Account invalidate!'
+);
+</pre>
+				</div>
+			</div>
+			
+			
+			
+			<div id="row">
+				<button id="confirmBtn" type="button" class="btn btn-danger">EasyModal.confirm()</button>
+				<div>
+<pre>
+// EasyModal.confirm( msg, [callback, title,  btnTextArray, params] )	
+EasyModal.confirm(
+	'Sure you want to delete it!', 
+	function(res){
+		EasyModal.alert('You choice :' + res);
+	}
+);
+</pre>
+				</div>
+			</div>
+			
+			
+			<div id="row"> 
+				<button id="promptBtn" type="button" class="btn btn-primary">EasyModal.prompt()</button>
+				<div>
+<pre>
+// EasyModal.prompt( msg, [defaultValue, callback, title, btnTextArray, params] )	
+EasyModal.prompt(
+	'Input your age: ', 
+	18, 
+	function(res) {
+		EasyModal.alert('Your age is:' + res);
+	}
+);
+</pre>
+				</div>
+			</div>
+			
+			
+			<div id="row">
+				<button id="modalBtn" type="button" class="btn btn-info">EasyModal.modal()</button>
+				<div>
+<pre>
+// EasyModal.modal(title , content , modalFooter, [params])
+EasyModal.modal(
+	'ModalTitle', 
+	'This is a demo!', 
+	'Add button'
+);
+</pre>
+				</div>
+			</div>
+			
+			
+						
+						<div id="row">
+				<button id="alertBtn2" type="button" class="btn btn-warning">User EasyModal.alert() </button>
+				<div>
+<pre>
+// EasyModal.alert( msg, [callback, title,  btnTextArray, params] )	
+EasyModal.alert(
+	'Account invalidate!', 
+	null, 
+	"User Title" ,
+	['User OK Button'],
+	{
+		size: 'modal-sm',
+		fade: false,
+		backdrop: 'static',
+		keyboard: false
+	}
+);
+</pre>
+				</div>
+			</div>
+
+
+	<div id="row">
+				<button id="confirmBtn2" type="button" class="btn btn-danger">User EasyModal.confirm() </button>
+				<div>
+<pre>
+// EasyModal.confirm( msg, [callback, title,  btnTextArray, params] )	
+EasyModal.confirm(
+	'Sure you want to delete it!', 
+	function(res){
+		EasyModal.alert('You choice :' + res);
+	}, 
+	"User Title" ,
+	['User Close Button', 'User OK Button'],
+	{
+		size: 'modal-lg',
+		backdrop: 'static'
+	}
+);
+</pre>
+				</div>
+			</div>
+			<div class=" row text-center">
+				<a href="http://www.easyproject.cn">http://easyproject.cn</a><br />
+				<a href="https://github.com/ushelp">https://github.com/ushelp</a><br /><br />
+			</div>
+		</div>
+
+	</body>
+
+</html>
