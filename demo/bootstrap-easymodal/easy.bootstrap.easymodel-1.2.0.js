@@ -4,7 +4,7 @@
  * Version 1.2.0
  * 
  * http://easyproject.cn
- * https://github.com/ushelp/EasyModel
+ * https://github.com/ushelp/EasyModal-Bootstrap
  * 
  * Author: Ray [ inthinkcolor@gmail.com ]
  * Since: 2016
@@ -17,20 +17,20 @@
  * EasyModal.prompt( msg, [defaultValue, callback, title, btnTextArray, params] );		
  * EasyModal.modal(title , content , modalFooter, [params]);
  * 
- * - params:			
+ * - params:
  * {
- * 	 size: '', // ' modal-sm', '', ' modal-lg'; default is ''; the modal size
- *   fade: true, // true, false; default is true; enable fadeIn and fadeOut effect; 
+ * 	 size: '', // 'modal-sm', '', 'modal-lg'; default is ''; the modal size
+ *   fade: true, // true, false; default is true; enable fadeIn and fadeOut effect
  *   backdrop: true, // true, 'static'; default is true; specify 'static' for a backdrop which doesn't close the modal on click
- *   keyboard: true //true, false; default is true;  specify true for enter ESC key to close modal dialog
+ *   keyboard: true // true, false; default is true;  specify true for enter ESC key to close modal dialog
  * }
  * 
  * - Golbal params:
  * EasyModal.defaults={
- * 	 size: '', // ' modal-sm', '', ' modal-lg'; default is ''; the modal size
+ * 	 size: '', // 'modal-sm', '', 'modal-lg'; default is ''; the modal size
  *   fade: true, // true, false; default is true; enable fadeIn and fadeOut effect
  *   ackdrop: true, // true, 'static'; default is true; specify 'static' for a backdrop which doesn't close the modal on click
- *   keyboard: true //true, false; default is true;  specify true for enter ESC key to close modal dialog
+ *   keyboard: true // true, false; default is true;  specify true for enter ESC key to close modal dialog
  * }
  * 
  */

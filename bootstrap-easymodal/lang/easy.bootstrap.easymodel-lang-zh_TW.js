@@ -4,7 +4,7 @@
  * Version 1.2.0
  * 
  * http://easyproject.cn
- * https://github.com/ushelp/EasyModel
+ * https://github.com/ushelp/EasyModal-Bootstrap
  * 
  * Author: Ray [ inthinkcolor@gmail.com ]
  * Since: 2016
