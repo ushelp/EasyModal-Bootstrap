@@ -8,6 +8,23 @@ EasyModal is a Bootstrap Modal extension plugin, can provide `alert`, `confirm`,
 
 latest version:  `1.2.0-RELEASE`
 
+
+## 安装
+
+- Download 
+
+- Bower
+
+```
+bower install easymodal-bootstrap
+```
+
+- npm
+
+```
+npm install easymodal-bootstrap
+```
+
 ## Getting started/开始使用
 
 ```HTML
@@ -17,11 +34,13 @@ latest version:  `1.2.0-RELEASE`
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <!-- Bootstrap end -->
 
-<!-- Bootstrap EasyModal  -->
-<script src="bootstrap-easymodal/easy.bootstrap.easymodel-1.2.0.min.js"></script>
+<!-- Bootstrap EasyModal START -->
+<script src="dist/easy.bootstrap.easymodal-1.2.0.min.js"></script>
 <!-- put your locale files after easy.bootstrap.easymodel.js -->
-<script src="bootstrap-easymodal/lang/easy.bootstrap.easymodel-lang-en.js"></script>
+<script src="dist/lang/easy.bootstrap.easymodal-lang-en.js"></script>
+<!-- Bootstrap EasyModal END -->
 ```
+
 
 ## API
 

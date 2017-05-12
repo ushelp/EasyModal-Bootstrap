@@ -1,0 +1,28 @@
+{
+  "name": "easymodal-bootstrap",
+  "authors": [
+    "Ray <inthinkcolor@gmail.com>"
+  ],
+  "description": ""Bootstrap Modal extension plugin.",
+  "main": "dist/easy.bootstrap.easymodal.min.js",
+  "keywords": [
+	"Bootstrap",
+	"modal",
+	"EasyModal",
+	"javascript",
+	"plugin"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ushelp/EasyModal-Bootstrap",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
